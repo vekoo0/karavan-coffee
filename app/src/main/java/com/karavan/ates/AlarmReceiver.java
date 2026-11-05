@@ -6,6 +6,7 @@ public class AlarmReceiver extends BroadcastReceiver {
  public void onReceive(Context c,Intent i) {
   int id=i.getIntExtra("id",0),phase=i.getIntExtra("phase",0);
   if(Timers.end(c,id)!=i.getLongExtra("end",-1)) return;
+  if(MainActivity.visible){AlertSound.checkActiveTimers(c);return;}
   NotificationManager nm=(NotificationManager)c.getSystemService(Context.NOTIFICATION_SERVICE);
   NotificationChannel ch=new NotificationChannel("fire-alerts","Ateş süre uyarıları",NotificationManager.IMPORTANCE_HIGH);
   ch.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM),new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build());

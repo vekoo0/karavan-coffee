@@ -37,3 +37,7 @@ Kahve/bakır renk paleti, cihazda çizilen geçişli arka plan ve köz detaylar�
 ## 1.3 — Başlık ve hızlı uzatma
 
 Karavan Coffee başlığı tek satırda ekran genişliğine göre küçülür; saat/tarih ayrı satıra taşındı. Hızlı uzatma düğmesi +1 saat olarak değiştirildi. APK ve imza doğrulandı; gerçek cihazda başlık yerleşimi henüz kontrol edilmedi.
+
+## 1.4 — Ses tanılama ve açık uygulamada alarm
+
+Açık uygulamada 5 dakika kala ve bitişte, her alan/bitiş zamanı/aşama için bir kez doğrudan alarm sesi çalınır. Uygulama arka plandayken Android bildirim kanalı kullanılmaya devam eder. Ses dene düğmesi açık uygulamayla aynı ses yolunu kullanır. Uygulama açıkken ses tuşları alarm ses düzeyini kontrol eder. Uyarı ayarlarında alarm ses düzeyi, bildirim izni ve kesin zamanlama durumu görünür. Telefonun sessiz/DND ve bildirim kanalı ayarları ayrıca kontrol edilmelidir. Cihazda sesli doğrulama henüz yapılmadı.
