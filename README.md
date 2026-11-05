@@ -33,3 +33,7 @@ APK: `downloads/karavan-ates.apk` (geliştirme imzası, Android 8+). APK derleme
 ## 1.2 — Kahve ve köz tasarımı
 
 Kahve/bakır renk paleti, cihazda çizilen geçişli arka plan ve köz detayları, markalı üst panel, gölgeli kartlar, durum rozetleri ve dokunma efektli düğmeler eklendi. Arka plan için internet veya resim dosyası gerekmez. APK derlendi, imzası doğrulandı. Gerçek cihazda görsel kontrol henüz yapılmadı.
+
+## 1.3 — Başlık ve hızlı uzatma
+
+Karavan Coffee başlığı tek satırda ekran genişliğine göre küçülür; saat/tarih ayrı satıra taşındı. Hızlı uzatma düğmesi +1 saat olarak değiştirildi. APK ve imza doğrulandı; gerçek cihazda başlık yerleşimi henüz kontrol edilmedi.
