@@ -13,7 +13,7 @@ else
 fi
 "$bt/d8" --lib "$platform" --output build/dex build/classes/com/karavan/ates/*.class
 sed 's/<manifest /<manifest package="com.karavan.ates" /' app/src/main/AndroidManifest.xml > build/AndroidManifest.xml
-"$bt/aapt" package -f -M build/AndroidManifest.xml -I "$platform" -F build/unsigned.apk --min-sdk-version 26 --target-sdk-version 35 --version-code 1 --version-name 1.0
+"$bt/aapt" package -f -M build/AndroidManifest.xml -I "$platform" -F build/unsigned.apk --min-sdk-version 26 --target-sdk-version 35 --version-code 2 --version-name 1.1
 (cd build/dex && zip -q -u ../unsigned.apk classes.dex)
 "$bt/zipalign" -f 4 build/unsigned.apk build/aligned.apk
 key="${ANDROID_DEBUG_KEYSTORE:-$HOME/.android/debug.keystore}"
