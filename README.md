@@ -41,3 +41,19 @@ Karavan Coffee başlığı tek satırda ekran genişliğine göre küçülür; s
 ## 1.4 — Ses tanılama ve açık uygulamada alarm
 
 Açık uygulamada 5 dakika kala ve bitişte, her alan/bitiş zamanı/aşama için bir kez doğrudan alarm sesi çalınır. Uygulama arka plandayken Android bildirim kanalı kullanılmaya devam eder. Ses dene düğmesi açık uygulamayla aynı ses yolunu kullanır. Uygulama açıkken ses tuşları alarm ses düzeyini kontrol eder. Uyarı ayarlarında alarm ses düzeyi, bildirim izni ve kesin zamanlama durumu görünür. Telefonun sessiz/DND ve bildirim kanalı ayarları ayrıca kontrol edilmelidir. Cihazda sesli doğrulama henüz yapılmadı.
+
+## 1.5 — Kazanç ve dar ekran düzeni
+
+- Saatlik ücret 200 TL. Başlatılan ve eklenen saatler işlem anında kalıcı kazanç defterine eklenir. Aynı raporu tekrar açmak ek gelir üretmez.
+- Günlük, aylık ve tüm zamanlar toplamı; son 30 işlem geçmişi. Türkiye saatiyle işletme günü 02.00–ertesi gün 01.59.59 arasıdır. Ayın 1'i 02.00'den önceki işlemler önceki aya sayılır. Geçmiş kayıtlar gece silinmez; rapor yeni güne geçer.
+- Kazanç başlatılan/uzatılan süre bedelidir; tahsilat, gider veya net kâr takibi değildir. Uzatma hangi işletme gününde yapılırsa o güne yazılır. Alanı boşaltmak gelir kaydını silmez ve iade oluşturmaz. Eski sürümlerin kullanımları geriye dönük ücretlendirilmez. Eski bir kullanım uzatılırsa yalnızca yeni uzatmanın bedeli kaydedilir.
+- Sayaç ve kazanç aynı SharedPreferences kaydında saklanır. Bozuk kazanç kaydı tespit edilirse yeni satışla üzerine yazılmaz. Kayıtlar cihazda saklanır; uygulama verileri silinirse veya uygulama kaldırılırsa kaybolur. Güncellemeyi uygulamayı kaldırmadan kurun.
+- Orta araç çubuğu eşit genişlikte Sıralama / Kazançlar / Ses-izinler düğmelerine ayrıldı. Filtre yazıları sığacak biçimde ölçeklenir. Boş kartlardaki tekrarlanan hızlı başlatma düğmeleri kaldırıldı; aktif kartlarda +1 saat ve Boşalt korunur. Küçük/yatay ekranda tüm sayfa kaydırılır. Sistem çubukları için ekran payı ayrılır.
+
+### Doğrulama
+
+```sh
+ECJ_JAR=/path/to/ecj-3.39.0.jar JSON_TEST_JAR=/path/to/json-20240303.jar scripts/test-host.sh
+```
+
+9 süre, 16 ücret/gün-ay-yıl sınırı ve 19 defter kayıt kontrolü geçti. Defter testi gerçek uygulama Ledger sınıfını çalıştırır; Android depolama/alarm arayüzleri bellek içi test nesneleriyle değiştirilir. 50 alanın isim ve bölüm sınırı testi de geçti. APK derlemesi ve imza kontrolü yapıldı. Fiziksel Android cihaz/emülatörde görsel düzen, kalıcı cihaz depolaması ve ses testi henüz yapılmadı.
