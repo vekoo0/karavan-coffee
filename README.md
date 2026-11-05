@@ -29,3 +29,7 @@ Kaynak klasörünü VS Code veya Visual Studio ile açabilirsiniz. Yerel Android
 Koyu renkli yuvarlatılmış kartlar, aktif/boş/son 5 dakika/süresi dolan özetleri, anlık saat ve tarih, seçili filtre vurgusu, yalnızca uyarılar filtresi ve bitiş zamanına göre sıralama eklendi. Alan sırasına geçmek için Sıralama düğmesini kullanın. Kartlar ekran genişliğine göre 1–4 sütuna yerleşir. Her kartta kalan süre çubuğu bulunur. Hızlı 1/2 saat başlatma ve +30 dakika uzatma işlemleri onay ister; normal süre seçimi 1–7 saat olarak korunur. Ekran döndüğünde seçili filtreler korunur.
 
 APK: `downloads/karavan-ates.apk` (geliştirme imzası, Android 8+). APK derlemesi, imza doğrulaması, 9 süre hesabı kontrolü ve 50 alanın isim/sınır kontrolleri geçti. Fiziksel cihaz/emülatör üzerinde görsel ve sesli bildirim doğrulaması yapılmadı.
+
+## 1.2 — Kahve ve köz tasarımı
+
+Kahve/bakır renk paleti, cihazda çizilen geçişli arka plan ve köz detayları, markalı üst panel, gölgeli kartlar, durum rozetleri ve dokunma efektli düğmeler eklendi. Arka plan için internet veya resim dosyası gerekmez. APK derlendi, imzası doğrulandı. Gerçek cihazda görsel kontrol henüz yapılmadı.
